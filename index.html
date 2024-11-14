@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات صيانة السيارات - محمد عادل</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <script src="script/services.js"></script> -->
+</head>
+<body id="body"> 
+    <!-- أيقونة واتساب -->
+<a href="https://wa.me/01140767985" target="_blank" class="whatsapp-icon">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ75KzcZJMW7mC6vsA8vNOzkAc5AwfOWzN6U6UzC5MhSgeSpAaEvZIddWj6CS3lkgKAQc&usqp=CAU" alt="WhatsApp" width="50" height="50">
+</a>
+    <!-- Visitor Welcome Message -->
+        <div class="back-ask" id="backAsk">
+            <div id="visitorMessage" class="visitor-message">
+                <p>هل هذه أول زيارة لك؟</p>
+               <div class="btns">
+                <button id="yesButton">نعم</button>
+                <button id="noButton">لا</button>
+               </div>
+            </div>
+        </div>
+<header>
+    <!-- التغيير اليانا عايزو هنا -->
+    <!-- <div class="logo"><a href="#">كارجيني</a></div> -->
+    <div class="logo">
+        <a href="#" id="siteLink">اسم الموقع</a>
+      </div>
+    <!-- لحد هنا فقط -->
+    <ul class="large-screen">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#gallery">امثلة مصورة</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+    <div class="list-mobile">
+        <div class="child-list">
+            <div class="option"></div>
+            <div class="option ch"></div>
+            <div class="option"></div>
+            <ul class="small-screen">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#gallery">امثلة مصورة</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <!-- قسم البطل -->
+    <section class="hero" id="home">
+        <!-- <h1 id="heading">محمد عادل - خدمات صيانة السيارات</h1> -->
+        <h1 id="heading"></h1>
+        <!-- <p>خدمة صيانة احترافية لجميع أنواع السيارات، مع إمكانية الوصول إلى باب منزلك</p> -->
+         <p id="decription"></p>
+        <button onclick="document.getElementById('contact').scrollIntoView()" id="orderNow">احجز الآن</button>
+    </section>
+    <!-- قسم الخدمات -->
+    <section class="section" id="services">
+        <h2 id="headingServices">خدماتنا</h2>
+        <div class="services">
+            <div class="service-box">
+                <h3 id="serviceHeadingOne">تغيير الزيت</h3>
+                <p id="serviceDescriptionOne">تغيير الزيت باستخدام أفضل الزيوت المتاحة للحفاظ على محرك سيارتك.</p>
+                <span>1</span>
+            </div>
+            <div class="service-box">
+                <h3 id="serviceHeadingTwo">فحص الأعطال</h3>
+                <p id="serviceDescriptionTwo">تشخيص شامل لأعطال السيارة وتقديم حلول إصلاح دقيقة.</p>
+                <span>2</span>
+            </div>
+            <div class="service-box">
+                <h3 id="serviceHeadingThree">صيانة دورية</h3>
+                <p id="serviceDescriptionThree">إجراء الصيانة الدورية الضرورية لضمان أداء عالٍ للمركبة.</p>
+                <span>3</span>
+            </div>
+            <div class="service-box">
+                <h3 id="serviceHeadingFour">خدمة منزلية</h3>
+                <p id="serviceDescriptionFour">نصل إليك في أي وقت لإجراء الصيانة في موقعك بمرونة وراحة.</p>
+                <span>4</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الصور -->
+    <section class="section" id="gallery">
+        <h2>امثلة مصورة</h2>
+        <div class="gallery">
+            <img src="images/fix-1.jpg" alt="خدمة 1">
+            <img src="images/fix-2.jpg" alt="خدمة 2">
+            <!-- <img src="images/fix-3.jpg" alt="خدمة 3"> -->
+            <!-- <img src="images/fix-4.jpg" alt="خدمة 4"> -->
+        </div>
+    </section>
+    <!-- قسم من نحن -->
+    <section class="section" id="about">
+        <h2 id="aboutUsHeading">من نحن</h2>
+        <p id="aboutUs"></p>
+    </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="section">
+    <div class="contact-form">
+        <h2>تواصل معنا</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="الاسم" required>
+            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+            <input type="number" id="phone" placeholder="رقم الهاتف " required>
+            <textarea id="message" placeholder="الرسالة" required></textarea>
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+        <div class="social-midea">
+            <h3>أو يمكنك التواصل معنا عبر</h3>
+            <a href="https://www.facebook.com/profile.php?id=61564847470638&sk=reels_tab" target="_blank">facebook</a>
+        </div>
+    </div>
+</section>
+    <!-- زر التمرير لأعلى -->
+    <button class="scroll-to-top" onclick="window.scrollTo({top: 0,behavior: 'smooth'});">↑</button>
+    <!-- الفوتر -->
+    <footer>
+        <!-- <p>Made By <a href=" https://mahmoud-a-hamed.github.io/protfolio" target="_blank" class="link-mahmoud">Mahmoud Hamed</a>&copy;2024</p> -->
+         <p>تم التصميم بواسطة <a href="https://mahmoud-a-hamed.github.io/protfolio" target="_blank" class="design">محمود حامد </a> © 2024 جميع الحقوق محفوظة</p>
+    </footer>
+    <script type="module">
+        // استيراد Firebase Libraries
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+      import { getDatabase, ref, push, set, onValue } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js";
+      
+      // إعدادات Firebase الخاصة بك
+      const firebaseConfig = {
+        apiKey: "AIzaSyDZNhlq4a1DWW2LTbMTaUJhA1MIPkeq1UY",
+        authDomain: "mohamed-adel-e2e13.firebaseapp.com",
+        databaseURL: "https://mohamed-adel-e2e13-default-rtdb.firebaseio.com",
+        projectId: "mohamed-adel-e2e13",
+        storageBucket: "mohamed-adel-e2e13.firebasestorage.app",
+        messagingSenderId: "806857656486",
+        appId: "1:806857656486:web:407269dafb311284b6cc67"
+      };
+      
+      // تهيئة Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app); // استخدام getDatabase للحصول على مرجع قاعدة البيانات
+      
+// ربط عنصر a مع قاعدة البيانات لتحديث الاسم تلقائيًا
+const updateSiteName = () => {
+const siteNameRef = ref(db, '/siteSettings/siteName'); // استخدم db بدلاً من firebase.database()
+
+// تحديث الاسم في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+onValue(siteNameRef, (snapshot) => { // استخدم onValue بدلاً من on
+  const siteName = snapshot.val();
+  if (siteName) {
+    document.getElementById('siteLink').textContent = siteName;
+  }
+});
+};
+
+// استدعاء الدالة لعرض الاسم وتحديثه لحظيًا
+updateSiteName();
+
+// تغيير الوصف 
+const updateDescription = () => {
+const siteDescriptionRef = ref(db, '/siteSettings/description'); // استخدم db بدلاً من firebase.database()
+
+// تحديث الوصف في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+onValue(siteDescriptionRef, (snapshot) => { // استخدم onValue بدلاً من on
+  const descriptionSite = snapshot.val();
+  if (descriptionSite) {
+    document.getElementById('decription').textContent = descriptionSite;
+  }
+});
+};
+
+// استدعاء الدالة لعرض الوصف وتحديثه لحظيًا
+updateDescription();
+      
+
+// تغيير زر الحجز 
+const updateBookingButtonText = () => {
+const bookingButtonTextRef = ref(db, '/siteSettings/bookingButtonText'); // استخدم db بدلاً من firebase.database()
+
+// تحديث زر الحجز في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+onValue(bookingButtonTextRef, (snapshot) => { // استخدم onValue بدلاً من on
+  const changeTextBtn = snapshot.val();
+  if (changeTextBtn) {
+    document.getElementById('orderNow').textContent = changeTextBtn;
+  }
+});
+};
+
+// استدعاء الدالة لعرض زر الحجز وتحديثه لحظيًا
+updateBookingButtonText();
+      
+// تغيير العنوان 
+const updateHeading = () => {
+const siteHeadingRef = ref(db, '/siteSettings/heading'); // استخدم db بدلاً من firebase.database()
+
+// تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+onValue(siteHeadingRef, (snapshot) => { // استخدم onValue بدلاً من on
+  const headingSite = snapshot.val();
+  if (headingSite) {
+    document.getElementById('heading').textContent = headingSite;
+  }
+});
+};
+
+// استدعاء الدالة لعرض العنوان وتحديثه لحظيًا
+updateHeading();
+
+
+
+
+// بداية جزء من نحن
+// تغيير وصف من نحن 
+const UpdateAboutUsDescription= () => {
+const siteaboutUsDescriptionRef = ref(db, '/siteSettings/aboutUsDescription'); // استخدم db بدلاً من firebase.database()
+
+// تحديث وصف في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+onValue(siteaboutUsDescriptionRef, (snapshot) => { // استخدم onValue بدلاً من on
+  const aboutSite = snapshot.val();
+  if (aboutSite) {
+    document.getElementById('aboutUs').textContent = aboutSite;
+  }
+});
+};
+
+// استدعاء الدالة لعرض وصف من نحن الموقع وتحديثه لحظيًا
+UpdateAboutUsDescription();
+
+
+
+const UpdateAboutUsHeading= () => {
+const siteaboutUsHeadingRef = ref(db, '/siteSettings/aboutUsHeading'); // استخدم db بدلاً من firebase.database()
+
+// تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+onValue(siteaboutUsHeadingRef, (snapshot) => { // استخدم onValue بدلاً من on
+  const aboutUsHeading = snapshot.val();
+  if (aboutUsHeading) {
+    document.getElementById('aboutUsHeading').textContent = aboutUsHeading;
+  }
+});
+};
+
+// استدعاء الدالة لعرض وصف من نحن الموقع وتحديثه لحظيًا
+UpdateAboutUsHeading();
+
+
+// نهاية جزء من نحن
+
+
+
+// بداية جزء الخدمات
+
+// تغيير عنوان الخدمات 
+const UpdateHeadingServices= () => {
+    const siteHeadingServicesRef = ref(db, '/siteSettings/servicesHeading'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteHeadingServicesRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const headingServices = snapshot.val();
+      if (headingServices) {
+        document.getElementById('headingServices').textContent = headingServices;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان الخدمات وتحديثه لحظيًا
+  UpdateHeadingServices();
+  
+  // تغيير عنوان 1 في الخدمات 
+  const UpdateHeadingServicesOne= () => {
+    const siteHeadingServicesOneRef = ref(db, '/siteSettings/serviceOneHeading'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteHeadingServicesOneRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const headingServicesOne = snapshot.val();
+      if (headingServicesOne) {
+        document.getElementById('serviceHeadingOne').textContent = headingServicesOne;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان 1 وتحديثه لحظيًا
+  UpdateHeadingServicesOne();
+  
+  
+  
+  // تغيير عنوان 2 في الخدمات 
+  const UpdateHeadingServicesTwo= () => {
+    const siteHeadingServicesTwoRef = ref(db, '/siteSettings/serviceTwoHeading'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteHeadingServicesTwoRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const headingServicesTwo = snapshot.val();
+      if (headingServicesTwo) {
+        document.getElementById('serviceHeadingTwo').textContent = headingServicesTwo;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان 2 وتحديثه لحظيًا
+  UpdateHeadingServicesTwo();
+  
+  
+  // تغيير عنوان 3 في الخدمات 
+  const UpdateHeadingServicesThree= () => {
+    const siteHeadingServicesThreeRef = ref(db, '/siteSettings/serviceThreeHeading'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteHeadingServicesThreeRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const headingServicesThree = snapshot.val();
+      if (headingServicesThree) {
+        document.getElementById('serviceHeadingThree').textContent = headingServicesThree;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان 3 وتحديثه لحظيًا
+  UpdateHeadingServicesThree();
+  
+  
+  // تغيير عنوان 4 في الخدمات 
+  const UpdateHeadingServicesFour= () => {
+    const siteHeadingServicesFourRef = ref(db, '/siteSettings/serviceFourHeading'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteHeadingServicesFourRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const headingServicesFour = snapshot.val();
+      if (headingServicesFour) {
+        document.getElementById('serviceHeadingFour').textContent = headingServicesFour;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان 4 وتحديثه لحظيًا
+  UpdateHeadingServicesFour();
+  
+  // بداية جزء تغيير وصف الخدمات
+  
+  // تغيير وصف 1 في الخدمات 
+  const UpdateDescriptionServicesOne= () => {
+    const siteDescriptionServicesOneRef = ref(db, '/siteSettings/serviceOneDescription'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteDescriptionServicesOneRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const descriptionServicesOne = snapshot.val();
+      if (descriptionServicesOne) {
+        document.getElementById('serviceDescriptionOne').textContent = descriptionServicesOne;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان 1 وتحديثه لحظيًا
+  UpdateDescriptionServicesOne();
+  
+  
+  // تغيير وصف 2 في الخدمات 
+  const UpdateDescriptionServicesTwo= () => {
+    const siteDescriptionServicesTwoRef = ref(db, '/siteSettings/serviceTwoDescription'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteDescriptionServicesTwoRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const descriptionServicesTwo = snapshot.val();
+      if (descriptionServicesTwo) {
+        document.getElementById('serviceDescriptionTwo').textContent = descriptionServicesTwo;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان 2 وتحديثه لحظيًا
+  UpdateDescriptionServicesTwo();
+  
+  
+  // تغيير وصف 3 في الخدمات 
+  const UpdateDescriptionServicesThree= () => {
+    const siteDescriptionServicesThreeRef = ref(db, '/siteSettings/serviceThreeDescription'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteDescriptionServicesThreeRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const descriptionServicesThree = snapshot.val();
+      if (descriptionServicesThree) {
+        document.getElementById('serviceDescriptionThree').textContent = descriptionServicesThree;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان 3 وتحديثه لحظيًا
+  UpdateDescriptionServicesThree();
+  
+  
+  // تغيير وصف 4 في الخدمات 
+  const UpdateDescriptionServicesFour= () => {
+    const siteDescriptionServicesFourRef = ref(db, '/siteSettings/serviceFourDescription'); // استخدم db بدلاً من firebase.database()
+  
+    // تحديث العنوان في الصفحة بشكل لحظي عند تغييره في قاعدة البيانات
+    onValue(siteDescriptionServicesFourRef, (snapshot) => { // استخدم onValue بدلاً من on
+      const descriptionServicesFour = snapshot.val();
+      if (descriptionServicesFour) {
+        document.getElementById('serviceDescriptionFour').textContent = descriptionServicesFour;
+      }
+    });
+  };
+  
+  // استدعاء الدالة لعرض عنوان 4 وتحديثه لحظيًا
+  UpdateDescriptionServicesFour();
+  
+  
+  
+  // نهاية جزء تغيير وصف الخدمات
+  
+  // نهاية جزء الخدمات
+
+
+      // دالة لحفظ بيانات العملاء في Realtime Database
+      function storeCustomerData(name, email, message, phone) {
+        const customersRef = ref(db, 'customers');
+        const newCustomerRef = push(customersRef);
+        set(newCustomerRef, {
+          name: name,
+          email: email,
+          message: message,
+          phone: phone,
+          timestamp: new Date().toISOString()
+        })
+        .then(() => {
+          alert("تم إرسال رسالتك بنجاح!");
+        })
+        .catch((error) => {
+          console.error("حدث خطأ أثناء حفظ البيانات: ", error);
+          alert("حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.");
+        });
+      }
+      
+      // ربط النموذج بحدث الإرسال
+      document.getElementById("contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        const phone = document.getElementById("phone").value;
+      
+        // استدعاء الدالة لحفظ البيانات في Realtime Database
+        storeCustomerData(name, email, message, phone);
+      
+        // تنظيف الحقول بعد الإرسال
+        document.getElementById("contactForm").reset();
+      });
+      
+      // ظهور الأقسام عند التمرير
+      const sections = document.querySelectorAll('.section');
+      window.addEventListener('scroll', () => {
+        sections.forEach(section => {
+          const sectionTop = section.getBoundingClientRect().top;
+          if (sectionTop < window.innerHeight - 100) {
+            section.classList.add('visible');
+          }
+        });
+      });
+      
+      // التعامل مع الرسالة
+      const visitorMessage = document.getElementById("visitorMessage");
+      const yesButton = document.getElementById("yesButton");
+      const noButton = document.getElementById("noButton");
+      
+      // تسجيل الرد في Firebase
+      function logVisitorResponse(response) {
+        const responseRef = ref(db, 'visitorResponses'); // تأكد من استخدام 'db' وليس 'firebase'
+        const newResponseRef = push(responseRef);
+        set(newResponseRef, {
+          response: response,
+          timestamp: new Date().toISOString()
+        });
+      }
+      
+      // إخفاء الرسالة وعرض الرد
+      yesButton.addEventListener("click", function() {
+        logVisitorResponse("نعم");
+        backAsk.style.display = 'none';
+      });
+      
+      noButton.addEventListener("click", function() {
+        logVisitorResponse("لا");
+        backAsk.style.display = 'none';
+      });
+      
+      // زر التمرير لأعلى
+      const scrollToTopButton = document.querySelector('.scroll-to-top');
+      window.onscroll = () => {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          scrollToTopButton.style.display = 'block';
+        } else {
+          scrollToTopButton.style.display = 'none';
+        }
+      };
+        </script>
+
+</body>
+</html>
